@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Calculando el Total</title>
+    <!-- Reset de CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal -->
+    <main>
+
+        <!-- Card -->
+        <div class="card">
+
+            <!-- Ficha del producto -->
+            <section>
+
+                <!-- Imagen producto-->
+                <div class="laptop-img">
+                    <img src="assets/img/laptop.png" alt="">
+                </div>
+                <!--Fin Imagen producto-->
+
+                <!-- Título producto -->
+                <h1>Laptop Gamer AMD</h1>
+
+                <!-- Formulario -->
+                <form>
+                    <!-- Cantidad de elementos a ingresar -->
+                    <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese cantidad" min="0">
+
+                    <!-- Color del producto -->
+                    <fieldset>
+                        <label for="color">Elige el color: </label>
+                        <input type="color" id="color" name="color" placeholder="Ingrese color">
+                    </fieldset>
+                </form>
+                <!--Fin formulario-->
+
+            </section>
+            <!--Fin ficha de producto-->
+
+            <!-- Cálculo de precio -->
+            <section>
+                <p>Precio: $850.000</p>
+                <!-- Botón para calcular total -->
+                <input type="button" id="calculo" value="Calcular total">
+            </section>
+            <!--Fin cálculo de precio-->
+
+        </div>
+        <!--Fin card-->
+
+        <!-- Sección outputs -->
+        <section class="resultados">
+
+            <p>Total: <span id="total"></span></p>
+            <p>Cantidad: <span id="cantidad-final"></span></p>
+
+            <!-- Contenedor de círculo de color -->
+            <div class="contenedor-color-final">
+                <p>Color:
+                    <div id="color-final"></div>
+                </p>
+            </div> <!--Fin contenedor círculo de color-->
+
+        </section> <!--Fin sección outputs-->
+
+    </main> <!--Fin contenedor principal-->
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
